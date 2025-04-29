@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS topup_game;
+USE topup_game;
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    game VARCHAR(100),
+    user_id VARCHAR(100),
+    jumlah VARCHAR(100),
+    payment VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

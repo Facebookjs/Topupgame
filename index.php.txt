@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Up Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+        <h2 class="text-xl font-bold mb-4 text-center">Form Top Up Game</h2>
+        <form action="proses.php" method="POST" class="space-y-4">
+
+            <div>
+                <label class="block font-semibold">Nama Game</label>
+                <input type="text" name="game" required class="w-full border p-2 rounded" placeholder="Contoh: Mobile Legends">
+            </div>
+
+            <div>
+                <label class="block font-semibold">User ID</label>
+                <input type="text" name="user_id" required class="w-full border p-2 rounded" placeholder="Masukkan ID akun game">
+            </div>
+
+            <div>
+                <label class="block font-semibold">Jumlah Diamond/Koin</label>
+                <input type="text" name="jumlah" required class="w-full border p-2 rounded" placeholder="Contoh: 500 Diamond">
+            </div>
+
+            <div>
+                <label class="block font-semibold">Metode Pembayaran</label>
+                <select name="payment" required class="w-full border p-2 rounded">
+                    <option value="">-- Pilih --</option>
+                    <option>DANA</option>
+                    <option>OVO</option>
+                    <option>Gopay</option>
+                    <option>ShopeePay</option>
+                    <option>Bank Transfer</option>
+                </select>
+            </div>
+
+            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">
+                Kirim Pesanan
+            </button>
+        </form>
+    </div>
+</body>
+</html>
